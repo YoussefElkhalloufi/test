@@ -1,0 +1,91 @@
+.banner {
+    width : 100% ;
+    height : 100vh;
+    background-color: #fff;
+ }
+
+ .navbar {
+    width: 100%;
+    margin : unset;
+    padding: 45px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+ }
+ .logo {
+    width: 220px;
+    cursor: pointer;
+    float: left;
+ }
+ .navbar ul li  {
+    list-style: none;
+    display : inline-block;
+    margin: 0 20px;
+    position: relative;
+ }
+
+ .navbar ul li a { 
+    text-decoration: none;
+    color:  #030303 ;
+    text-transform: uppercase;
+}
+
+ .navbar ul li::after{
+    content:'';
+    height:3px;
+    width: 0;
+    background: #000000;
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    transition : 0.5s;
+   
+ }
+
+ .navbar ul li:hover::after {
+    width: 100%;
+ }
+
+ .cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px;
+    max-width: 1000px;
+    margin: -40% auto;
+    
+  }
+  
+  .content {
+    flex: 1;
+    text-align: left;
+    color: #000000;
+    padding-right: 20px;
+  }
+  
+  h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  h4 {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .pic {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .pic img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+ 
+ 

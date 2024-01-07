@@ -1,0 +1,77 @@
+.navbar {
+    width: 100%;
+    margin : unset;
+    padding: 45px 30px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+ }
+
+
+
+  
+  .navbar ul li  {
+    list-style: none;
+    display : inline-block;
+    margin: 0 20px;
+    position: relative;
+ }
+
+ .navbar ul li a { 
+    text-decoration: none;
+    color:  #000000 ;
+    text-transform: uppercase;
+}
+
+ .navbar ul li::after{
+    content:'';
+    height:3px;
+    width: 0;
+    background: #000000;
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    transition : 0.5s;
+ }
+
+ .navbar ul li:hover::after {
+    width: 100%;
+ }
+  
+
+ .logo {
+    width: 220px;
+    cursor: pointer;
+    float: left;
+ }
+
+ .t-shirt-c {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 20px;
+   
+  }
+
+ .t-shirt {
+    text-align : center;
+    width: calc(33.33% - 10px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+  }
+  
+  .t-shirt img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode:normal;
+  }
+  
+  .t-shirt p {
+    margin-top: 10px; 
+  }
+  body { 
+    background-color: rgba(255, 255, 255, 0.945);
+  }
